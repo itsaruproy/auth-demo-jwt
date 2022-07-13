@@ -1,0 +1,19 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXJ1cCIsImlhdCI6MTY1NjcyMjMxNSwiZXhwIjoxNjU2NzIyMzMwfQ.o4PtCsrRF30Bd3mbDwa5SBdLYIx4upYhU4zqaEW4cyE
+
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXJ1cCIsImlhdCI6MTY1NjcyMjI4MH0.VmOSYy5L--c59DkW0g6bR37YWodAePp1JVn8E3AaFtI"
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username":"Arup"
+}
